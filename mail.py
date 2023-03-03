@@ -10,11 +10,8 @@ df = pd.read_csv('input.csv') #change this to us responses.cv file
 
 def send_certificate(name, email, certificate_dir, remaining_emails):
 
-    global DIRECTORY
-
     EMAIL = "" #your email address
     PASSWORD = "" #this is not my actual password, this is app password. Refer to the readme file for more info
-    DIRECTORY = 'Generated Certificates' #directory where the certificates are stored
     SUBJECT = "Certificate of Participation" #subject of the email
     BODY = f"""Dear {name},
 
@@ -64,5 +61,5 @@ for _, row in df.iterrows():
     global name
     name = row['Name']
     email = row['Email']
-    certificate_dir = DIRECTORY  
+    certificate_dir = "Generated Certificates"
     remaining_emails = send_certificate(name, email, certificate_dir, remaining_emails)
