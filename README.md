@@ -28,7 +28,7 @@ Here is a [video](https://youtu.be/969ZkS1uRQg) showing how to GDSC-Certificator
     If you have an xlsx file you can easily convert it to a csv file by using [this](https://www.ilovepdf.com/excel_to_csv) website.
 3. Move the template and the csv file to the project's directory and rename them to `template.png` and `data.csv` respectively. (this is not necessary but it will make your life easier)
 
-# Certificate  Usage 📖
+# Certificate Generator Usage 📖
 * Run [main.py](GUI/main.py).
 * Fill the required fields.
 * When filling the coordinates, open the template image with paint and make a rough guess of the point where you want to fill the name. Move your mouse to that point and note the coordinates from the bottom left corner of the screen. (you can also use [this](https://yangcha.github.io/iview/iview.html) website to get the coordinates)
@@ -47,7 +47,7 @@ for font in font_list:
     print(font)
 ```
 
-# Mailer Generator Usage 📖
+# Mailer Usage 📖
 * Go to [mail.py](mail.py).
 * Change the name of csv file in line 9 to the name of your csv file.
 * Add your email and app password in line 13 and 14 respectively.  
